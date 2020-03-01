@@ -1,6 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>jupyter小工具</title>
+    <url>/2020/03/01/jupyter%E5%B0%8F%E5%B7%A5%E5%85%B7/</url>
+    <content><![CDATA[<blockquote>
+<p>这些小工具可以做一些比较方便的交互</p>
+</blockquote>
+<a id="more"></a>
+<h1 id="滑块"><a href="#滑块" class="headerlink" title="滑块"></a>滑块</h1><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">from</span> ipywidgets <span class="keyword">import</span> interact</span><br><span class="line"><span class="keyword">import</span> ipywidgets <span class="keyword">as</span> widgets</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">f</span><span class="params">(x)</span>:</span></span><br><span class="line">    <span class="keyword">return</span> x</span><br><span class="line">interact(f,x=<span class="number">10</span>,);</span><br></pre></td></tr></table></figure>
+<p><img src="/images/%E6%BB%91%E5%9D%97.png" alt="滑块"></p>
+<h1 id="布尔值生成复选框"><a href="#布尔值生成复选框" class="headerlink" title="布尔值生成复选框"></a>布尔值生成复选框</h1><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">from</span> ipywidgets <span class="keyword">import</span> interact</span><br><span class="line"></span><br><span class="line">interact(f,x=<span class="literal">True</span>);</span><br></pre></td></tr></table></figure>
+<p><img src="/images/%E5%B8%83%E5%B0%94%E5%80%BC%E7%94%9F%E6%88%90%E5%A4%8D%E9%80%89%E6%A1%86.png" alt="布尔值生成复选框"></p>
+<h1 id="字符串生成文本区域"><a href="#字符串生成文本区域" class="headerlink" title="字符串生成文本区域"></a>字符串生成文本区域</h1><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">from</span> ipywidgets <span class="keyword">import</span> interact</span><br><span class="line">interact(f,x=<span class="string">''</span>);</span><br></pre></td></tr></table></figure>
+<p><img src="/images/%E5%AD%97%E7%AC%A6%E4%B8%B2%E7%94%9F%E6%88%90%E6%96%87%E6%9C%AC%E5%8C%BA%E5%9F%9F.png" alt="字符串生成文本区域"></p>
+<h1 id="播放器"><a href="#播放器" class="headerlink" title="播放器"></a>播放器</h1><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"> <span class="keyword">import</span> ipywidgets <span class="keyword">as</span> widgets</span><br><span class="line">play = widgets.Play(</span><br><span class="line">    <span class="comment"># interval = 10,</span></span><br><span class="line">    value = <span class="number">50</span>,</span><br><span class="line">    min = <span class="number">0</span>,</span><br><span class="line">    max = <span class="number">100</span>,</span><br><span class="line">    step = <span class="number">1</span>,</span><br><span class="line">    description = <span class="string">'Press play'</span>,</span><br><span class="line">    disabled=<span class="literal">False</span></span><br><span class="line">)</span><br><span class="line">slider = widgets.IntSlider()</span><br><span class="line">widgets.jslink((play,<span class="string">'value'</span>),(slider,<span class="string">'value'</span>))</span><br><span class="line">widgets.HBox([play,slider])</span><br></pre></td></tr></table></figure>
+<p><img src="/images/%E6%92%AD%E6%94%BE%E5%99%A8.png" alt="播放器"></p>
+<h1 id="日历"><a href="#日历" class="headerlink" title="日历"></a>日历</h1><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">widgets.DatePicker(</span><br><span class="line">    description = <span class="string">'Pick a Date'</span>,</span><br><span class="line">    disabled = <span class="literal">False</span></span><br><span class="line">)</span><br></pre></td></tr></table></figure>
+<p><img src="/images/%E6%97%A5%E5%8E%861.png" alt="日历1"><br><img src="/images/%E6%97%A5%E5%8E%862.png" alt="日历2"></p>
+<h1 id="调色盘"><a href="#调色盘" class="headerlink" title="调色盘"></a>调色盘</h1><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">widgets.ColorPicker(</span><br><span class="line">    concise = <span class="literal">False</span>,</span><br><span class="line">    description = <span class="string">'Pick a color'</span>,</span><br><span class="line">    value = <span class="string">'blue'</span>,</span><br><span class="line">    disabled = <span class="literal">False</span></span><br><span class="line">)</span><br></pre></td></tr></table></figure>
+<p><img src="/images/%E8%B0%83%E8%89%B2%E7%9B%981.png" alt="调色盘1"><br><img src="/images/%E8%B0%83%E8%89%B2%E7%9B%982.png" alt="调色盘2"></p>
+<h1 id="标签"><a href="#标签" class="headerlink" title="标签"></a>标签</h1><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">tab_contents = [<span class="string">'P0'</span>,<span class="string">'P1'</span>,<span class="string">'P2'</span>,<span class="string">'P3'</span>,<span class="string">'P4'</span>]</span><br><span class="line">children = [widgets.Text(description=name) <span class="keyword">for</span> name <span class="keyword">in</span> tab_contents]</span><br><span class="line">tab = widgets.Tab()</span><br><span class="line">tab.children  = children</span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> range(len(children)):</span><br><span class="line">    tab.set_title(i,str(i))</span><br><span class="line">tab</span><br></pre></td></tr></table></figure>
+<p><img src="/images/%E6%A0%87%E7%AD%BE.png" alt="标签"></p>
+]]></content>
+      <categories>
+        <category>python</category>
+        <category>jupyter notebook</category>
+      </categories>
+      <tags>
+        <tag>jupyter notebook</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>my_first_blog</title>
     <url>/2020/02/18/my-first-blog/</url>
     <content><![CDATA[<h1 id="Markdown"><a href="#Markdown" class="headerlink" title="Markdown"></a>Markdown</h1><p>我要学习Markdown语法，<br>你们都别拦我<br>我想学习 这个疫情我要超越你们大部分人<br>哈哈哈哈哈哈哈哈哈，<br>这东西太爽了</p>
@@ -12,31 +42,6 @@
       <tags>
         <tag>Hexo</tag>
         <tag>Next</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>你好，世界！我来了。</title>
-    <url>/2020/02/18/hello-world/</url>
-    <content><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<a id="more"></a>
-<h1 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h1><h2 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h2 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h2 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h2 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>
-]]></content>
-      <tags>
-        <tag>Hexo</tag>
-        <tag>Next</tag>
-        <tag>dad</tag>
-        <tag>dasd</tag>
       </tags>
   </entry>
 </search>
