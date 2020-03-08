@@ -1,78 +1,92 @@
 <?xml version="1.0" encoding="utf-8"?>
-<search>
-  <entry>
-    <title>Markdown</title>
-    <url>/2020/03/08/markdown/</url>
-    <content><![CDATA[<blockquote>
-<p>一些jupyter notebook的快捷键操作和Markdown的一些语法介绍</p>
-</blockquote>
-<a id="more"></a>
-
-<h1 id="jupyter-notebook"><a href="#jupyter-notebook" class="headerlink" title="jupyter notebook"></a>jupyter notebook</h1><ul>
-<li><strong>Esc</strong>退出当前指定的单元格内</li>
-<li><strong>up</strong> and <strong>down</strong>上下移动想要选中的单元格就按<strong>enter</strong>进入</li>
-<li><strong>A</strong> 或 <strong>B</strong> 向上或向下增添一个代码单元格</li>
-<li><strong>M</strong>调出Markdown单元格</li>
-<li><strong>Y</strong>调出代码单元格</li>
-<li><strong>Shift+up</strong> <strong>or</strong> <strong>down</strong> 连续选中单元格</li>
-<li><strong>D+D</strong> 删除</li>
-<li><strong>Z</strong> 将撤销单元格删除</li>
-</ul>
-<h1 id="Markdown"><a href="#Markdown" class="headerlink" title="Markdown"></a>Markdown</h1><p><a href="https://www.markdownguide.org/" target="_blank" rel="noopener">Mrakdown</a>是一种轻量化的、易于学习的标记语言，用于格式化纯文本。它的语法与HTLM标记有一对一的对应关系。</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 这是一级标题</span></span><br><span class="line"><span class="comment">## 这是二级标题</span></span><br><span class="line"><span class="comment">### 这是三级标题   \\一共有六级标题\\</span></span><br><span class="line"></span><br><span class="line">这是一些纯文本信息</span><br><span class="line"></span><br><span class="line">通过**粗体** 和 __blod__ , 或*斜体* 和 __italic__添加重点。</span><br><span class="line"></span><br><span class="line">段落必须用空行隔开</span><br><span class="line"></span><br><span class="line">* 点数</span><br><span class="line">  * 可以缩进</span><br><span class="line"><span class="number">1.</span> 也可用这种形式</span><br><span class="line"><span class="number">2.</span> 空格</span><br><span class="line"></span><br><span class="line">[超链接](网址)</span><br><span class="line">！[图片名字](图片位置)</span><br><span class="line"></span><br><span class="line">内联代码用单引号<span class="string">'foo()'</span></span><br><span class="line">代码块用三个单引号</span><br><span class="line"><span class="string">'''</span></span><br><span class="line"><span class="string">代码块</span></span><br><span class="line"><span class="string">'''</span></span><br><span class="line"></span><br><span class="line">或者用四个空格组成：</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">print</span>（）</span><br><span class="line">    </span><br><span class="line">    </span><br><span class="line">列表的表示方法：</span><br><span class="line">name | 价格 |  数量  </span><br><span class="line">-|-|-</span><br><span class="line">香蕉 | $<span class="number">1</span> | <span class="number">5</span> |</span><br><span class="line">苹果 | $<span class="number">1</span> | <span class="number">6</span> |</span><br><span class="line">草莓 | $<span class="number">1</span> | <span class="number">7</span> |</span><br><span class="line"></span><br><span class="line">-----------</span><br><span class="line"></span><br><span class="line">name | <span class="number">111</span> | <span class="number">222</span> | <span class="number">333</span> | <span class="number">444</span></span><br><span class="line">- | :-: | :-: | :-: | -:</span><br><span class="line">aaa | bbb | ccc | ddd | eee| </span><br><span class="line">fff | ggg| hhh | iii | <span class="number">000</span>|</span><br><span class="line"></span><br><span class="line">-----------</span><br><span class="line"></span><br><span class="line">name | <span class="number">111</span> | <span class="number">222</span> | <span class="number">333</span> | <span class="number">444</span></span><br><span class="line">:-: | :-: | :-: | :-: | :-:</span><br><span class="line">aaa | bbb | ccc | ddd | eee| </span><br><span class="line">fff | ggg| hhh | iii | <span class="number">000</span>|</span><br><span class="line"></span><br><span class="line">说明：</span><br><span class="line"><span class="number">1</span>）|、-、:之间的多余空格会被忽略，不影响布局。</span><br><span class="line"><span class="number">2</span>）默认标题栏居中对齐，内容居左对齐。</span><br><span class="line"><span class="number">3</span>）-:表示内容和标题栏居右对齐，:-表示内容和标题栏居左对齐，:-:表示内容和标题栏居中对齐。</span><br><span class="line"><span class="number">4</span>）内容和|之间的多余空格会被忽略，每行第一个|和最后一个|可以省略，-的数量至少有一个。</span><br></pre></td></tr></table></figure>
-]]></content>
+<search> 
+  
+  
+    
+    <entry>
+      <title>Markdown</title>
+      <link href="/2020/03/08/markdown/"/>
+      <url>/2020/03/08/markdown/</url>
+      
+        <content type="html"><![CDATA[<blockquote><p>一些jupyter notebook的快捷键操作和Markdown的一些语法介绍</p></blockquote><a id="more"></a><h1 id="jupyter-notebook"><a href="#jupyter-notebook" class="headerlink" title="jupyter notebook"></a>jupyter notebook</h1><ul><li><strong>Esc</strong>退出当前指定的单元格内</li><li><strong>up</strong> and <strong>down</strong>上下移动想要选中的单元格就按<strong>enter</strong>进入</li><li><strong>A</strong> 或 <strong>B</strong> 向上或向下增添一个代码单元格</li><li><strong>M</strong>调出Markdown单元格</li><li><strong>Y</strong>调出代码单元格</li><li><strong>Shift+up</strong> <strong>or</strong> <strong>down</strong> 连续选中单元格</li><li><strong>D+D</strong> 删除</li><li><strong>Z</strong> 将撤销单元格删除</li></ul><h1 id="Markdown"><a href="#Markdown" class="headerlink" title="Markdown"></a>Markdown</h1><p><a href="https://www.markdownguide.org/" target="_blank" rel="noopener">Mrakdown</a>是一种轻量化的、易于学习的标记语言，用于格式化纯文本。它的语法与HTLM标记有一对一的对应关系。</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 这是一级标题</span></span><br><span class="line"><span class="comment">## 这是二级标题</span></span><br><span class="line"><span class="comment">### 这是三级标题   \\一共有六级标题\\</span></span><br><span class="line"></span><br><span class="line">这是一些纯文本信息</span><br><span class="line"></span><br><span class="line">通过**粗体** 和 __blod__ , 或*斜体* 和 __italic__添加重点。</span><br><span class="line"></span><br><span class="line">段落必须用空行隔开</span><br><span class="line"></span><br><span class="line">* 点数</span><br><span class="line">  * 可以缩进</span><br><span class="line"><span class="number">1.</span> 也可用这种形式</span><br><span class="line"><span class="number">2.</span> 空格</span><br><span class="line"></span><br><span class="line">[超链接](网址)</span><br><span class="line">！[图片名字](图片位置)</span><br><span class="line"></span><br><span class="line">内联代码用单引号<span class="string">'foo()'</span></span><br><span class="line">代码块用三个单引号</span><br><span class="line"><span class="string">'''</span></span><br><span class="line"><span class="string">代码块</span></span><br><span class="line"><span class="string">'''</span></span><br><span class="line"></span><br><span class="line">或者用四个空格组成：</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">print</span>（）</span><br><span class="line">    </span><br><span class="line">    </span><br><span class="line">列表的表示方法：</span><br><span class="line">name | 价格 |  数量  </span><br><span class="line">-|-|-</span><br><span class="line">香蕉 | $<span class="number">1</span> | <span class="number">5</span> |</span><br><span class="line">苹果 | $<span class="number">1</span> | <span class="number">6</span> |</span><br><span class="line">草莓 | $<span class="number">1</span> | <span class="number">7</span> |</span><br><span class="line"></span><br><span class="line">-----------</span><br><span class="line"></span><br><span class="line">name | <span class="number">111</span> | <span class="number">222</span> | <span class="number">333</span> | <span class="number">444</span></span><br><span class="line">- | :-: | :-: | :-: | -:</span><br><span class="line">aaa | bbb | ccc | ddd | eee| </span><br><span class="line">fff | ggg| hhh | iii | <span class="number">000</span>|</span><br><span class="line"></span><br><span class="line">-----------</span><br><span class="line"></span><br><span class="line">name | <span class="number">111</span> | <span class="number">222</span> | <span class="number">333</span> | <span class="number">444</span></span><br><span class="line">:-: | :-: | :-: | :-: | :-:</span><br><span class="line">aaa | bbb | ccc | ddd | eee| </span><br><span class="line">fff | ggg| hhh | iii | <span class="number">000</span>|</span><br><span class="line"></span><br><span class="line">说明：</span><br><span class="line"><span class="number">1</span>）|、-、:之间的多余空格会被忽略，不影响布局。</span><br><span class="line"><span class="number">2</span>）默认标题栏居中对齐，内容居左对齐。</span><br><span class="line"><span class="number">3</span>）-:表示内容和标题栏居右对齐，:-表示内容和标题栏居左对齐，:-:表示内容和标题栏居中对齐。</span><br><span class="line"><span class="number">4</span>）内容和|之间的多余空格会被忽略，每行第一个|和最后一个|可以省略，-的数量至少有一个。</span><br></pre></td></tr></table></figure>]]></content>
+      
+      
       <categories>
-        <category>jupyter notebook</category>
-        <category>Markdown</category>
+          
+          <category> jupyter notebook </category>
+          
+          <category> Markdown </category>
+          
       </categories>
-      <tags>
-        <tag>jupyter notebook</tag>
-        <tag>python</tag>
-        <tag>Markdown</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>jupyter小工具</title>
-    <url>/2020/03/01/jupyter%E5%B0%8F%E5%B7%A5%E5%85%B7/</url>
-    <content><![CDATA[<blockquote>
-<p>这些小工具可以做一些比较方便的交互</p>
-</blockquote>
-<a id="more"></a>
-<h1 id="滑块"><a href="#滑块" class="headerlink" title="滑块"></a>滑块</h1><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">from</span> ipywidgets <span class="keyword">import</span> interact</span><br><span class="line"><span class="keyword">import</span> ipywidgets <span class="keyword">as</span> widgets</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">f</span><span class="params">(x)</span>:</span></span><br><span class="line">    <span class="keyword">return</span> x</span><br><span class="line">interact(f,x=<span class="number">10</span>,);</span><br></pre></td></tr></table></figure>
-<p><img src="/images/%E6%BB%91%E5%9D%97.png" alt="滑块"></p>
-<h1 id="布尔值生成复选框"><a href="#布尔值生成复选框" class="headerlink" title="布尔值生成复选框"></a>布尔值生成复选框</h1><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">from</span> ipywidgets <span class="keyword">import</span> interact</span><br><span class="line"></span><br><span class="line">interact(f,x=<span class="literal">True</span>);</span><br></pre></td></tr></table></figure>
-<p><img src="/images/%E5%B8%83%E5%B0%94%E5%80%BC%E7%94%9F%E6%88%90%E5%A4%8D%E9%80%89%E6%A1%86.png" alt="布尔值生成复选框"></p>
-<h1 id="字符串生成文本区域"><a href="#字符串生成文本区域" class="headerlink" title="字符串生成文本区域"></a>字符串生成文本区域</h1><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">from</span> ipywidgets <span class="keyword">import</span> interact</span><br><span class="line">interact(f,x=<span class="string">''</span>);</span><br></pre></td></tr></table></figure>
-<p><img src="/images/%E5%AD%97%E7%AC%A6%E4%B8%B2%E7%94%9F%E6%88%90%E6%96%87%E6%9C%AC%E5%8C%BA%E5%9F%9F.png" alt="字符串生成文本区域"></p>
-<h1 id="播放器"><a href="#播放器" class="headerlink" title="播放器"></a>播放器</h1><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"> <span class="keyword">import</span> ipywidgets <span class="keyword">as</span> widgets</span><br><span class="line">play = widgets.Play(</span><br><span class="line">    <span class="comment"># interval = 10,</span></span><br><span class="line">    value = <span class="number">50</span>,</span><br><span class="line">    min = <span class="number">0</span>,</span><br><span class="line">    max = <span class="number">100</span>,</span><br><span class="line">    step = <span class="number">1</span>,</span><br><span class="line">    description = <span class="string">'Press play'</span>,</span><br><span class="line">    disabled=<span class="literal">False</span></span><br><span class="line">)</span><br><span class="line">slider = widgets.IntSlider()</span><br><span class="line">widgets.jslink((play,<span class="string">'value'</span>),(slider,<span class="string">'value'</span>))</span><br><span class="line">widgets.HBox([play,slider])</span><br></pre></td></tr></table></figure>
-<p><img src="/images/%E6%92%AD%E6%94%BE%E5%99%A8.png" alt="播放器"></p>
-<h1 id="日历"><a href="#日历" class="headerlink" title="日历"></a>日历</h1><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">widgets.DatePicker(</span><br><span class="line">    description = <span class="string">'Pick a Date'</span>,</span><br><span class="line">    disabled = <span class="literal">False</span></span><br><span class="line">)</span><br></pre></td></tr></table></figure>
-<p><img src="/images/%E6%97%A5%E5%8E%861.png" alt="日历1"><br><img src="/images/%E6%97%A5%E5%8E%862.png" alt="日历2"></p>
-<h1 id="调色盘"><a href="#调色盘" class="headerlink" title="调色盘"></a>调色盘</h1><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">widgets.ColorPicker(</span><br><span class="line">    concise = <span class="literal">False</span>,</span><br><span class="line">    description = <span class="string">'Pick a color'</span>,</span><br><span class="line">    value = <span class="string">'blue'</span>,</span><br><span class="line">    disabled = <span class="literal">False</span></span><br><span class="line">)</span><br></pre></td></tr></table></figure>
-<p><img src="/images/%E8%B0%83%E8%89%B2%E7%9B%981.png" alt="调色盘1"><br><img src="/images/%E8%B0%83%E8%89%B2%E7%9B%982.png" alt="调色盘2"></p>
-<h1 id="标签"><a href="#标签" class="headerlink" title="标签"></a>标签</h1><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">tab_contents = [<span class="string">'P0'</span>,<span class="string">'P1'</span>,<span class="string">'P2'</span>,<span class="string">'P3'</span>,<span class="string">'P4'</span>]</span><br><span class="line">children = [widgets.Text(description=name) <span class="keyword">for</span> name <span class="keyword">in</span> tab_contents]</span><br><span class="line">tab = widgets.Tab()</span><br><span class="line">tab.children  = children</span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> range(len(children)):</span><br><span class="line">    tab.set_title(i,str(i))</span><br><span class="line">tab</span><br></pre></td></tr></table></figure>
-<p><img src="/images/%E6%A0%87%E7%AD%BE.png" alt="标签"></p>
-]]></content>
+      
+      
+        <tags>
+            
+            <tag> jupyter notebook </tag>
+            
+            <tag> python </tag>
+            
+            <tag> Markdown </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>jupyter小工具</title>
+      <link href="/2020/03/01/jupyter%E5%B0%8F%E5%B7%A5%E5%85%B7/"/>
+      <url>/2020/03/01/jupyter%E5%B0%8F%E5%B7%A5%E5%85%B7/</url>
+      
+        <content type="html"><![CDATA[<blockquote><p>这些小工具可以做一些比较方便的交互</p></blockquote><a id="more"></a><h1 id="滑块"><a href="#滑块" class="headerlink" title="滑块"></a>滑块</h1><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> ipywidgets <span class="keyword">import</span> interact</span><br><span class="line"><span class="keyword">import</span> ipywidgets <span class="keyword">as</span> widgets</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">f</span><span class="params">(x)</span>:</span></span><br><span class="line">    <span class="keyword">return</span> x</span><br><span class="line">interact(f,x=<span class="number">10</span>,);</span><br></pre></td></tr></table></figure><p><img src="/images/%E6%BB%91%E5%9D%97.png" alt="滑块"></p><h1 id="布尔值生成复选框"><a href="#布尔值生成复选框" class="headerlink" title="布尔值生成复选框"></a>布尔值生成复选框</h1><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> ipywidgets <span class="keyword">import</span> interact</span><br><span class="line"></span><br><span class="line">interact(f,x=<span class="literal">True</span>);</span><br></pre></td></tr></table></figure><p><img src="/images/%E5%B8%83%E5%B0%94%E5%80%BC%E7%94%9F%E6%88%90%E5%A4%8D%E9%80%89%E6%A1%86.png" alt="布尔值生成复选框"></p><h1 id="字符串生成文本区域"><a href="#字符串生成文本区域" class="headerlink" title="字符串生成文本区域"></a>字符串生成文本区域</h1><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> ipywidgets <span class="keyword">import</span> interact</span><br><span class="line">interact(f,x=<span class="string">''</span>);</span><br></pre></td></tr></table></figure><p><img src="/images/%E5%AD%97%E7%AC%A6%E4%B8%B2%E7%94%9F%E6%88%90%E6%96%87%E6%9C%AC%E5%8C%BA%E5%9F%9F.png" alt="字符串生成文本区域"></p><h1 id="播放器"><a href="#播放器" class="headerlink" title="播放器"></a>播放器</h1><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"> <span class="keyword">import</span> ipywidgets <span class="keyword">as</span> widgets</span><br><span class="line">play = widgets.Play(</span><br><span class="line">    <span class="comment"># interval = 10,</span></span><br><span class="line">    value = <span class="number">50</span>,</span><br><span class="line">    min = <span class="number">0</span>,</span><br><span class="line">    max = <span class="number">100</span>,</span><br><span class="line">    step = <span class="number">1</span>,</span><br><span class="line">    description = <span class="string">'Press play'</span>,</span><br><span class="line">    disabled=<span class="literal">False</span></span><br><span class="line">)</span><br><span class="line">slider = widgets.IntSlider()</span><br><span class="line">widgets.jslink((play,<span class="string">'value'</span>),(slider,<span class="string">'value'</span>))</span><br><span class="line">widgets.HBox([play,slider])</span><br></pre></td></tr></table></figure><p><img src="/images/%E6%92%AD%E6%94%BE%E5%99%A8.png" alt="播放器"></p><h1 id="日历"><a href="#日历" class="headerlink" title="日历"></a>日历</h1><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">widgets.DatePicker(</span><br><span class="line">    description = <span class="string">'Pick a Date'</span>,</span><br><span class="line">    disabled = <span class="literal">False</span></span><br><span class="line">)</span><br></pre></td></tr></table></figure><p><img src="/images/%E6%97%A5%E5%8E%861.png" alt="日历1"><br><img src="/images/%E6%97%A5%E5%8E%862.png" alt="日历2"></p><h1 id="调色盘"><a href="#调色盘" class="headerlink" title="调色盘"></a>调色盘</h1><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">widgets.ColorPicker(</span><br><span class="line">    concise = <span class="literal">False</span>,</span><br><span class="line">    description = <span class="string">'Pick a color'</span>,</span><br><span class="line">    value = <span class="string">'blue'</span>,</span><br><span class="line">    disabled = <span class="literal">False</span></span><br><span class="line">)</span><br></pre></td></tr></table></figure><p><img src="/images/%E8%B0%83%E8%89%B2%E7%9B%981.png" alt="调色盘1"><br><img src="/images/%E8%B0%83%E8%89%B2%E7%9B%982.png" alt="调色盘2"></p><h1 id="标签"><a href="#标签" class="headerlink" title="标签"></a>标签</h1><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">tab_contents = [<span class="string">'P0'</span>,<span class="string">'P1'</span>,<span class="string">'P2'</span>,<span class="string">'P3'</span>,<span class="string">'P4'</span>]</span><br><span class="line">children = [widgets.Text(description=name) <span class="keyword">for</span> name <span class="keyword">in</span> tab_contents]</span><br><span class="line">tab = widgets.Tab()</span><br><span class="line">tab.children  = children</span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> range(len(children)):</span><br><span class="line">    tab.set_title(i,str(i))</span><br><span class="line">tab</span><br></pre></td></tr></table></figure><p><img src="/images/%E6%A0%87%E7%AD%BE.png" alt="标签"></p>]]></content>
+      
+      
       <categories>
-        <category>python</category>
-        <category>jupyter notebook</category>
+          
+          <category> python </category>
+          
+          <category> jupyter notebook </category>
+          
       </categories>
-      <tags>
-        <tag>jupyter notebook</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>my_first_blog</title>
-    <url>/2020/02/18/my-first-blog/</url>
-    <content><![CDATA[<h1 id="Markdown"><a href="#Markdown" class="headerlink" title="Markdown"></a>Markdown</h1><p>我要学习Markdown语法，<br>你们都别拦我<br>我想学习 这个疫情我要超越你们大部分人<br>哈哈哈哈哈哈哈哈哈，<br>这东西太爽了</p>
-<h2 id="随手心得"><a href="#随手心得" class="headerlink" title="随手心得"></a>随手心得</h2><p>你们想学好就要下功夫</p>
-]]></content>
+      
+      
+        <tags>
+            
+            <tag> jupyter notebook </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>my_first_blog</title>
+      <link href="/2020/02/18/my-first-blog/"/>
+      <url>/2020/02/18/my-first-blog/</url>
+      
+        <content type="html"><![CDATA[<h1 id="Markdown"><a href="#Markdown" class="headerlink" title="Markdown"></a>Markdown</h1><p>我要学习Markdown语法，<br>你们都别拦我<br>我想学习 这个疫情我要超越你们大部分人<br>哈哈哈哈哈哈哈哈哈，<br>这东西太爽了</p><h2 id="随手心得"><a href="#随手心得" class="headerlink" title="随手心得"></a>随手心得</h2><p>你们想学好就要下功夫</p>]]></content>
+      
+      
       <categories>
-        <category>python</category>
+          
+          <category> python </category>
+          
       </categories>
-      <tags>
-        <tag>Hexo</tag>
-        <tag>Next</tag>
-      </tags>
-  </entry>
+      
+      
+        <tags>
+            
+            <tag> Hexo </tag>
+            
+            <tag> Next </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+  
+  
 </search>
