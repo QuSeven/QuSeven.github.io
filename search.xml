@@ -1,6 +1,37 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>Markdown</title>
+    <url>/2020/03/08/markdown/</url>
+    <content><![CDATA[<blockquote>
+<p>一些jupyter notebook的快捷键操作和Markdown的一些语法介绍</p>
+</blockquote>
+<a id="more"></a>
+
+<h1 id="jupyter-notebook"><a href="#jupyter-notebook" class="headerlink" title="jupyter notebook"></a>jupyter notebook</h1><ul>
+<li><strong>Esc</strong>退出当前指定的单元格内</li>
+<li><strong>up</strong> and <strong>down</strong>上下移动想要选中的单元格就按<strong>enter</strong>进入</li>
+<li><strong>A</strong> 或 <strong>B</strong> 向上或向下增添一个代码单元格</li>
+<li><strong>M</strong>调出Markdown单元格</li>
+<li><strong>Y</strong>调出代码单元格</li>
+<li><strong>Shift+up</strong> <strong>or</strong> <strong>down</strong> 连续选中单元格</li>
+<li><strong>D+D</strong> 删除</li>
+<li><strong>Z</strong> 将撤销单元格删除</li>
+</ul>
+<h1 id="Markdown"><a href="#Markdown" class="headerlink" title="Markdown"></a>Markdown</h1><p><a href="www.markdownguide.org">Mrakdown</a>是一种轻量化的、易于学习的标记语言，用于格式化纯文本。它的语法与HTLM标记有一对一的对应关系。</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 这是一级标题</span></span><br><span class="line"><span class="comment">## 这是二级标题</span></span><br><span class="line"><span class="comment">### 这是三级标题   \\一共有六级标题\\</span></span><br><span class="line"></span><br><span class="line">这是一些纯文本信息</span><br><span class="line"></span><br><span class="line">通过**粗体** 和 __blod__ , 或*斜体* 和 __italic__添加重点。</span><br><span class="line"></span><br><span class="line">段落必须用空行隔开</span><br><span class="line"></span><br><span class="line">* 点数</span><br><span class="line">  * 可以缩进</span><br><span class="line"><span class="number">1.</span> 也可用这种形式</span><br><span class="line"><span class="number">2.</span> 空格</span><br><span class="line"></span><br><span class="line">[超链接](网址)</span><br><span class="line">！[图片名字](图片位置)</span><br><span class="line"></span><br><span class="line">内联代码用单引号<span class="string">'foo()'</span></span><br><span class="line">代码块用三个单引号</span><br><span class="line"><span class="string">'''</span></span><br><span class="line"><span class="string">代码块</span></span><br><span class="line"><span class="string">'''</span></span><br><span class="line"></span><br><span class="line">或者用四个空格组成：</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">print</span>（）</span><br><span class="line">    </span><br><span class="line">    </span><br><span class="line">列表的表示方法：</span><br><span class="line">name | 价格 |  数量  </span><br><span class="line">-|-|-</span><br><span class="line">香蕉 | $<span class="number">1</span> | <span class="number">5</span> |</span><br><span class="line">苹果 | $<span class="number">1</span> | <span class="number">6</span> |</span><br><span class="line">草莓 | $<span class="number">1</span> | <span class="number">7</span> |</span><br><span class="line"></span><br><span class="line">-----------</span><br><span class="line"></span><br><span class="line">name | <span class="number">111</span> | <span class="number">222</span> | <span class="number">333</span> | <span class="number">444</span></span><br><span class="line">- | :-: | :-: | :-: | -:</span><br><span class="line">aaa | bbb | ccc | ddd | eee| </span><br><span class="line">fff | ggg| hhh | iii | <span class="number">000</span>|</span><br><span class="line"></span><br><span class="line">-----------</span><br><span class="line"></span><br><span class="line">name | <span class="number">111</span> | <span class="number">222</span> | <span class="number">333</span> | <span class="number">444</span></span><br><span class="line">:-: | :-: | :-: | :-: | :-:</span><br><span class="line">aaa | bbb | ccc | ddd | eee| </span><br><span class="line">fff | ggg| hhh | iii | <span class="number">000</span>|</span><br><span class="line"></span><br><span class="line">说明：</span><br><span class="line"><span class="number">1</span>）|、-、:之间的多余空格会被忽略，不影响布局。</span><br><span class="line"><span class="number">2</span>）默认标题栏居中对齐，内容居左对齐。</span><br><span class="line"><span class="number">3</span>）-:表示内容和标题栏居右对齐，:-表示内容和标题栏居左对齐，:-:表示内容和标题栏居中对齐。</span><br><span class="line"><span class="number">4</span>）内容和|之间的多余空格会被忽略，每行第一个|和最后一个|可以省略，-的数量至少有一个。</span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>jupyter notebook</category>
+        <category>Markdown</category>
+      </categories>
+      <tags>
+        <tag>jupyter notebook</tag>
+        <tag>python</tag>
+        <tag>Markdown</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>jupyter小工具</title>
     <url>/2020/03/01/jupyter%E5%B0%8F%E5%B7%A5%E5%85%B7/</url>
     <content><![CDATA[<blockquote>
