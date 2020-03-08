@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2020-03-08T08:30:23.693Z</updated>
+  <updated>2020-03-08T08:34:57.624Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -21,19 +21,15 @@
     <link href="http://yoursite.com/2020/03/08/%E7%88%AC%E8%99%AB%E5%9F%BA%E7%A1%80%E7%AE%80%E4%BB%8B/"/>
     <id>http://yoursite.com/2020/03/08/%E7%88%AC%E8%99%AB%E5%9F%BA%E7%A1%80%E7%AE%80%E4%BB%8B/</id>
     <published>2020-03-08T08:26:04.360Z</published>
-    <updated>2020-03-08T08:30:23.693Z</updated>
+    <updated>2020-03-08T08:34:57.624Z</updated>
     
-    <content type="html"><![CDATA[<blockquote><p>标志着我的爬虫开始学习了。</p></blockquote><h1 id="爬虫的使用场景分类"><a href="#爬虫的使用场景分类" class="headerlink" title="爬虫的使用场景分类"></a>爬虫的使用场景分类</h1><ul><li>通用爬虫:抓取互联网一整张数据  </li></ul><hr><ul><li>聚焦爬虫：在通用爬虫的基础上，抓取页面中指定局部的数据</li></ul><hr><ul><li>增量式爬虫：检测网站中更新的情况，只会抓取网站更新的数据</li></ul><h1 id="爬虫的矛盾"><a href="#爬虫的矛盾" class="headerlink" title="爬虫的矛盾"></a>爬虫的矛盾</h1><ul><li>反爬机制</li></ul><hr><ul><li>反反爬机制</li></ul><hr><ul><li>robots.txt协议(君子协议)</li></ul><hr><h1 id="http协议-amp-https协议"><a href="#http协议-amp-https协议" class="headerlink" title="http协议&amp;https协议"></a>http协议&amp;https协议</h1><h2 id="概念"><a href="#概念" class="headerlink" title="概念:"></a>概念:</h2><pre><code>- http协议: 超文本传输协议,是服务器与客户端之间传输信息的一种形式.- https协议: 安全的超文本传输协议.</code></pre><h2 id="常用请求头信息"><a href="#常用请求头信息" class="headerlink" title="常用请求头信息:"></a>常用请求头信息:</h2><pre><code>- User-Agent: 请求载体的身份标识.- Connection: 请求完毕后,是断开连接还是保持连接.</code></pre><h2 id="常用响应头信息"><a href="#常用响应头信息" class="headerlink" title="常用响应头信息:"></a>常用响应头信息:</h2><pre><code>- Content-Type: 服务器响应回客户端的数据类型.</code></pre><h2 id="https协议的加密方式："><a href="#https协议的加密方式：" class="headerlink" title="https协议的加密方式："></a>https协议的加密方式：</h2><ul><li>对称秘钥加密: 对称加密算法的特点是算法公开、计算量小、加密速度快、加密效率高.缺点也很明显就是安全性不高，信息以及秘钥可以被窃取.<br><img src="/images/%E5%AF%B9%E7%A7%B0%E7%A7%98%E9%92%A5%E5%8A%A0%E5%AF%86.png" alt="对称秘钥加密"></li><li>非对称秘钥加密: 与对称密钥加密相比，优点在于无需共享的通用密钥，解密的私钥不发往任何用户。即使公钥在网上被截获，如果没有与其匹配的私钥，也无法解密，所截获的公钥是没有任何用处的。缺点在于与对称秘钥加密相比，所需时间较长。还有可能公钥被篡改，导致客户端无法解密。<br><img src="/images/%E9%9D%9E%E5%AF%B9%E7%A7%B0%E7%A7%98%E9%92%A5%E5%8A%A0%E5%AF%86.png" alt="非对称秘钥加密"></li><li>证书秘钥加密: 解决了非对称秘钥加密所存在的公钥会被挟持的可能，通过第三方认证机构对公钥进行数字认证，从而判断是否被挟持。<br><img src="/images/%E8%AF%81%E4%B9%A6%E7%A7%98%E9%92%A5%E5%8A%A0%E5%AF%86.png" alt="证书秘钥加密"></li></ul>]]></content>
+    <content type="html"><![CDATA[<blockquote><p>标志着我的爬虫开始学习了。</p></blockquote><a id="more"></a><h1 id="爬虫的使用场景分类"><a href="#爬虫的使用场景分类" class="headerlink" title="爬虫的使用场景分类"></a>爬虫的使用场景分类</h1><ul><li>通用爬虫:抓取互联网一整张数据  </li></ul><hr><ul><li>聚焦爬虫：在通用爬虫的基础上，抓取页面中指定局部的数据</li></ul><hr><ul><li>增量式爬虫：检测网站中更新的情况，只会抓取网站更新的数据</li></ul><h1 id="爬虫的矛盾"><a href="#爬虫的矛盾" class="headerlink" title="爬虫的矛盾"></a>爬虫的矛盾</h1><ul><li>反爬机制</li></ul><hr><ul><li>反反爬机制</li></ul><hr><ul><li>robots.txt协议(君子协议)</li></ul><hr><h1 id="http协议-amp-https协议"><a href="#http协议-amp-https协议" class="headerlink" title="http协议&amp;https协议"></a>http协议&amp;https协议</h1><h2 id="概念"><a href="#概念" class="headerlink" title="概念"></a>概念</h2><pre><code>- http协议: 超文本传输协议,是服务器与客户端之间传输信息的一种形式.- https协议: 安全的超文本传输协议.</code></pre><h2 id="常用请求头信息"><a href="#常用请求头信息" class="headerlink" title="常用请求头信息"></a>常用请求头信息</h2><pre><code>- User-Agent: 请求载体的身份标识.- Connection: 请求完毕后,是断开连接还是保持连接.</code></pre><h2 id="常用响应头信息"><a href="#常用响应头信息" class="headerlink" title="常用响应头信息"></a>常用响应头信息</h2><pre><code>- Content-Type: 服务器响应回客户端的数据类型.</code></pre><h2 id="https协议的加密方式"><a href="#https协议的加密方式" class="headerlink" title="https协议的加密方式"></a>https协议的加密方式</h2><ul><li>对称秘钥加密: 对称加密算法的特点是算法公开、计算量小、加密速度快、加密效率高.缺点也很明显就是安全性不高，信息以及秘钥可以被窃取.<br><img src="/images/%E5%AF%B9%E7%A7%B0%E7%A7%98%E9%92%A5%E5%8A%A0%E5%AF%86.png" alt="对称秘钥加密"></li><li>非对称秘钥加密: 与对称密钥加密相比，优点在于无需共享的通用密钥，解密的私钥不发往任何用户。即使公钥在网上被截获，如果没有与其匹配的私钥，也无法解密，所截获的公钥是没有任何用处的。缺点在于与对称秘钥加密相比，所需时间较长。还有可能公钥被篡改，导致客户端无法解密。<br><img src="/images/%E9%9D%9E%E5%AF%B9%E7%A7%B0%E7%A7%98%E9%92%A5%E5%8A%A0%E5%AF%86.png" alt="非对称秘钥加密"></li><li>证书秘钥加密: 解决了非对称秘钥加密所存在的公钥会被挟持的可能，通过第三方认证机构对公钥进行数字认证，从而判断是否被挟持。<br><img src="/images/%E8%AF%81%E4%B9%A6%E7%A7%98%E9%92%A5%E5%8A%A0%E5%AF%86.png" alt="证书秘钥加密"></li></ul>]]></content>
     
     <summary type="html">
     
-      
-      
-        &lt;blockquote&gt;
+      &lt;blockquote&gt;
 &lt;p&gt;标志着我的爬虫开始学习了。&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;h1 id=&quot;爬虫的使用场景分类&quot;&gt;&lt;a href=&quot;#爬虫的使用场景分类&quot; class=&quot;headerlink&quot; title=&quot;爬虫的使用场景分类&quot;&gt;&lt;/a&gt;爬虫的使用场景分类&lt;/
-      
     
     </summary>
     
@@ -68,9 +64,9 @@
       <category term="Markdown" scheme="http://yoursite.com/categories/jupyter-notebook/Markdown/"/>
     
     
-      <category term="python" scheme="http://yoursite.com/tags/python/"/>
-    
       <category term="jupyter notebook" scheme="http://yoursite.com/tags/jupyter-notebook/"/>
+    
+      <category term="python" scheme="http://yoursite.com/tags/python/"/>
     
       <category term="Markdown" scheme="http://yoursite.com/tags/Markdown/"/>
     
