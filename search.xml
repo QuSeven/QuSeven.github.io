@@ -6,7 +6,8 @@
     <content><![CDATA[<blockquote>
 </blockquote>
 <a id="more"></a>
-<h1 id="正则表达式"><a href="#正则表达式" class="headerlink" title="正则表达式"></a>正则表达式</h1><h2 id="什么是正则表达式"><a href="#什么是正则表达式" class="headerlink" title="什么是正则表达式"></a>什么是正则表达式</h2><p>世界上的信息是非常多的，但是我们关注的信息是有限的，假如我们希望只提取关注的数据，此时可以通过一些表达式进行提取，正则表达式就是其中一种进行数据筛选的表达式。<br>##常见匹配模式<br>^ ：^会匹配行或者字符串的起始位置，有时还会匹配整个文档的起始位置。</p>
+<h1 id="正则表达式"><a href="#正则表达式" class="headerlink" title="正则表达式"></a>正则表达式</h1><h2 id="什么是正则表达式"><a href="#什么是正则表达式" class="headerlink" title="什么是正则表达式"></a>什么是正则表达式</h2><p>世界上的信息是非常多的，但是我们关注的信息是有限的，假如我们希望只提取关注的数据，此时可以通过一些表达式进行提取，正则表达式就是其中一种进行数据筛选的表达式。</p>
+<h2 id="常见匹配模式"><a href="#常见匹配模式" class="headerlink" title="常见匹配模式"></a>常见匹配模式</h2><p>^ ：^会匹配行或者字符串的起始位置，有时还会匹配整个文档的起始位置。</p>
 <p>$ ：$会匹配行或字符串的结尾</p>
 <p>\b :不会消耗任何字符只匹配一个位置，常用于匹配单词边界 如 我想从字符串中”This is Regex”匹配单独的单词 “is” 正则就要写成 “\bis\b”</p>
 <p>　　 \b 不会匹配is 两边的字符，但它会识别is 两边是否为单词的边界</p>
@@ -32,8 +33,10 @@
 <h2 id="元字符"><a href="#元字符" class="headerlink" title="元字符"></a>元字符</h2><p>元字符就是正则表达式中具有一些特殊含义的字符，比如重复N次前面的字符</p>
 <p>.：匹配任意字符</p>
 <p>^：匹配字符串开始的位置</p>
-<p>$：匹配字符串结束的位置<br>##模式分组<br>()：通常用于提取某一个内容上，使用正则表达式匹配的时候需要将里面的某些内容提取出来的时候就将特定的表达式内容放到小括号中去</p>
-<p>|：或，只匹配在字符串中出现的第一个<br>##模式修正符<br>I：让表达式忽略大小写</p>
+<p>$：匹配字符串结束的位置</p>
+<h2 id="模式分组"><a href="#模式分组" class="headerlink" title="模式分组"></a>模式分组</h2><p>()：通常用于提取某一个内容上，使用正则表达式匹配的时候需要将里面的某些内容提取出来的时候就将特定的表达式内容放到小括号中去</p>
+<p>|：或，只匹配在字符串中出现的第一个</p>
+<h2 id="模式修正符"><a href="#模式修正符" class="headerlink" title="模式修正符"></a>模式修正符</h2><p>I：让表达式忽略大小写</p>
 <p>M：多行匹配</p>
 <p>L：本地化识别匹配</p>
 <p>U：根据Unicode字符解析字符</p>
@@ -52,7 +55,18 @@
 <p>{n,}?：重复n次以上，但尽可能少重复，如 “aaaaaaa” 正则 “a{1,}” 最少是1次所以取到结果为 “a”</p>
 <h2 id="贪婪模式与懒惰模式"><a href="#贪婪模式与懒惰模式" class="headerlink" title="贪婪模式与懒惰模式"></a>贪婪模式与懒惰模式</h2><p>贪婪模式就是经可能多的去匹配，懒惰模式就是尽可能少的匹配</p>
 <h2 id="转义字符"><a href="#转义字符" class="headerlink" title="转义字符"></a>转义字符</h2><p>想要匹配特殊字符，可以在特殊字符前加一个换行符</p>
-<p>#python语法基础<br>##定义变量，使用变量<br>input 用户自己输入值<br>print 打印值 可以输出多个变量<br>%d|%s 用于输出变量时占位<br>##字符串(后期爬虫必备)<br>int()把字符串转换为数字<br>str()把数字转换为字符串<br>len()获取某个字符占用的字节数<br>字符串可以用+连接<br>字符下标可以为负数<br>str[起始位置:终止位置:步长]切片，从起始开始截取字符串，到终止位置结束，不包括终止位置<br>str[::-1]倒序<br>str.find()|rfind 字符串查找<br>str.index()|rindex()字符串查找，与find不同的是返回的结果不同<br>str.count(str,start=0,end=len(str))字符串出现的次数<br>str.replace(“str”,”str”,替换次数)字符串替换，不会影响原字符串<br>str.split(“ “)字符串切割，参数可以不用写自动切割<br>str.capitalize()把字符串中的第一个字符大写<br>str.title()把字符串中每个单词大写<br>str.startswith(obj)|endswith(obj)判断字符串是否以obj开头|结尾，返回bool<br>str.lower()把所有大写转换为小写<br>str.upper()把所有小写转换为大写<br>str.ljust()返回一个原字符串左对齐，并使用空格填充至长度width的新字符串<br>str.rjust(width)返回一个原字符串右对齐，并使用空格填充至长度width的新字符串<br>str.center()返回一个原字符串居中对齐，并使用空格填充至长度width的新字符串<br>str.lstrip()删除字符串开头的空白字符<br>str.rstrip()删除字符串末尾的空白字符<br>str.strip()删除字符串两端的空白字符<br>str.partition()把str分成三部分，str前，str,和str后<br>str.rpartition()把str分成三部分，str前，str,和str后，从右边开始分<br>str.splitlines()按照行分割，返回一个各行作为元素的列表<br>str.isalpha()判断字符串是否都是字母<br>str.isdigit()判断字符串是否都是数字<br>str.isalnum()判断字符串是否都是数字或字母<br>str.isspace()判断字符串是否都是空格<br>str.join(mystr)每个字符后面添加一个mystr，构建出一个新的字符串<br>##运算符<br>（+） 加<br>（ -） 减<br>（<em>） 乘 乘号还可以让字符串重复n次<br>（/） 除<br>（//） 取商<br>（%） 取余<br>（*</em>） 冥 2的十次方1024,2的16次方65536<br>##if语句<br>判断语句：（if 条件：else 条件：）条件必须加tab键，不然会被当正常代码执行<br>比较运算符：&gt; | &lt; | &gt;= | &lt;= | !=<br>逻辑运算符 or | and | not<br>if.. elif elif…else… 语句<br>##循环语句<br>while循环———–print(“”)换行 end=””不换行<br>for循环—-可以直接循环字符串<br>break（跳出循环） 与 continue （跳出本次循环）<br>##列表<br>类似php中的数组<br>列表=[数据]<br>##列表的增删改查：<br>列表.append 增加<br>列表.insert(位置，内容) 增加<br>列表.extend(列表) 合并列表，也可以用+运算符<br>列表.pop()删除列表最后一个元素<br>列表.remove(内容)可以删除指定内容，只删除一次<br>del 列表[下标]删除指定下标内容<br>列表[下标]=修改元素<br>元素 in | not in 列表 判断元素是否在列表<br>##字典<br>字典={键值对}<br>##字典的增删改查：<br>增：字典[key]=value<br>删：del 字典[key]<br>改：字典[key]=value<br>查：字典.get[key]<br>字典.keys :查看字典的key<br>字典.values :查看字典的values<br>字典.items()：把字典变为元组<br>##元组<br>元组=(值)<br>元组可以把值赋给多个变量：a,b=元组<br>元组定义的值不支持修改<br>如果元组只有一个参数，则必须多写一个逗号，不然不是元组<br>元组可以为空<br>##函数<br>函数的定义：def 函数名():内容<br>列表、字典、可以当做全局变量使用<br>不定长参数(以元组形式保存数据)：def 函数名(<em>args):内容<br>不定长参数(以字典形式保存键值对)：def 函数名(*</em>kargs):内容<br>实参前面可以加或者*表示拆包<br>.sort()从小到大排序<br>.sort(reverse=true)从大到小排序<br>.reverse()倒序<br>lambda匿名函数的使用<br>eval()转换为表达式<br>交换两个变量的值：可以用第三个变量，也可以不用，如交换a跟b，a=a+b,b=a-b,a=a-b,python也可以这样子写：a,b=b,a<br>修改可以使用+=,仅限于可变类型，列表和字典<br>num+=num并不等价于num=num+num<br>##文件操作<br>open()打开文件<br>close()关闭文件<br>read()读取文件<br>write()写文件<br>readlines()按照行读数据<br>readline()只读一行数据<br>seek(offset,from)定位读写,offset偏移量，from=0文件开头，from=1当前位置，from=2文件末尾，seek实际上就是控制文件指针<br>tell()获取文件当前指针位置<br>os.rename()文件重命名<br>os.remove()删除文件<br>os.mkdir()创建文件夹<br>os.getcwd()获取当前操作绝对目录<br>os.chdir()改变默认操作目录<br>os.listdir()获取目录列表<br>os.rmdir()删除文件夹</p>
+<h1 id="python语法基础"><a href="#python语法基础" class="headerlink" title="python语法基础"></a>python语法基础</h1><p>##定义变量，使用变量<br>input 用户自己输入值<br>print 打印值 可以输出多个变量<br>%d|%s 用于输出变量时占位</p>
+<h2 id="字符串-后期爬虫必备"><a href="#字符串-后期爬虫必备" class="headerlink" title="字符串(后期爬虫必备)"></a>字符串(后期爬虫必备)</h2><p>int()把字符串转换为数字<br>str()把数字转换为字符串<br>len()获取某个字符占用的字节数<br>字符串可以用+连接<br>字符下标可以为负数<br>str[起始位置:终止位置:步长]切片，从起始开始截取字符串，到终止位置结束，不包括终止位置<br>str[::-1]倒序<br>str.find()|rfind 字符串查找<br>str.index()|rindex()字符串查找，与find不同的是返回的结果不同<br>str.count(str,start=0,end=len(str))字符串出现的次数<br>str.replace(“str”,”str”,替换次数)字符串替换，不会影响原字符串<br>str.split(“ “)字符串切割，参数可以不用写自动切割<br>str.capitalize()把字符串中的第一个字符大写<br>str.title()把字符串中每个单词大写<br>str.startswith(obj)|endswith(obj)判断字符串是否以obj开头|结尾，返回bool<br>str.lower()把所有大写转换为小写<br>str.upper()把所有小写转换为大写<br>str.ljust()返回一个原字符串左对齐，并使用空格填充至长度width的新字符串<br>str.rjust(width)返回一个原字符串右对齐，并使用空格填充至长度width的新字符串<br>str.center()返回一个原字符串居中对齐，并使用空格填充至长度width的新字符串<br>str.lstrip()删除字符串开头的空白字符<br>str.rstrip()删除字符串末尾的空白字符<br>str.strip()删除字符串两端的空白字符<br>str.partition()把str分成三部分，str前，str,和str后<br>str.rpartition()把str分成三部分，str前，str,和str后，从右边开始分<br>str.splitlines()按照行分割，返回一个各行作为元素的列表<br>str.isalpha()判断字符串是否都是字母<br>str.isdigit()判断字符串是否都是数字<br>str.isalnum()判断字符串是否都是数字或字母<br>str.isspace()判断字符串是否都是空格<br>str.join(mystr)每个字符后面添加一个mystr，构建出一个新的字符串</p>
+<h2 id="运算符"><a href="#运算符" class="headerlink" title="运算符"></a>运算符</h2><p>（+） 加<br>（ -） 减<br>（<em>） 乘 乘号还可以让字符串重复n次<br>（/） 除<br>（//） 取商<br>（%） 取余<br>（*</em>） 冥 2的十次方1024,2的16次方65536</p>
+<h2 id="if语句"><a href="#if语句" class="headerlink" title="if语句"></a>if语句</h2><p>判断语句：（if 条件：else 条件：）条件必须加tab键，不然会被当正常代码执行<br>比较运算符：&gt; | &lt; | &gt;= | &lt;= | !=<br>逻辑运算符 or | and | not<br>if.. elif elif…else… 语句</p>
+<h2 id="循环语句"><a href="#循环语句" class="headerlink" title="循环语句"></a>循环语句</h2><p>while循环———–print(“”)换行 end=””不换行<br>for循环—-可以直接循环字符串<br>break（跳出循环） 与 continue （跳出本次循环）</p>
+<h2 id="列表"><a href="#列表" class="headerlink" title="列表"></a>列表</h2><p>类似php中的数组<br>列表=[数据]</p>
+<h2 id="列表的增删改查："><a href="#列表的增删改查：" class="headerlink" title="列表的增删改查："></a>列表的增删改查：</h2><p>列表.append 增加<br>列表.insert(位置，内容) 增加<br>列表.extend(列表) 合并列表，也可以用+运算符<br>列表.pop()删除列表最后一个元素<br>列表.remove(内容)可以删除指定内容，只删除一次<br>del 列表[下标]删除指定下标内容<br>列表[下标]=修改元素<br>元素 in | not in 列表 判断元素是否在列表</p>
+<h2 id="字典"><a href="#字典" class="headerlink" title="字典"></a>字典</h2><p>字典={键值对}</p>
+<h2 id="字典的增删改查："><a href="#字典的增删改查：" class="headerlink" title="字典的增删改查："></a>字典的增删改查：</h2><p>增：字典[key]=value<br>删：del 字典[key]<br>改：字典[key]=value<br>查：字典.get[key]<br>字典.keys :查看字典的key<br>字典.values :查看字典的values<br>字典.items()：把字典变为元组</p>
+<h2 id="元组"><a href="#元组" class="headerlink" title="元组"></a>元组</h2><p>元组=(值)<br>元组可以把值赋给多个变量：a,b=元组<br>元组定义的值不支持修改<br>如果元组只有一个参数，则必须多写一个逗号，不然不是元组<br>元组可以为空</p>
+<h2 id="函数-1"><a href="#函数-1" class="headerlink" title="函数"></a>函数</h2><p>函数的定义：def 函数名():内容<br>列表、字典、可以当做全局变量使用<br>不定长参数(以元组形式保存数据)：def 函数名(<em>args):内容<br>不定长参数(以字典形式保存键值对)：def 函数名(*</em>kargs):内容<br>实参前面可以加或者*表示拆包<br>.sort()从小到大排序<br>.sort(reverse=true)从大到小排序<br>.reverse()倒序<br>lambda匿名函数的使用<br>eval()转换为表达式<br>交换两个变量的值：可以用第三个变量，也可以不用，如交换a跟b，a=a+b,b=a-b,a=a-b,python也可以这样子写：a,b=b,a<br>修改可以使用+=,仅限于可变类型，列表和字典<br>num+=num并不等价于num=num+num</p>
+<h2 id="文件操作"><a href="#文件操作" class="headerlink" title="文件操作"></a>文件操作</h2><p>open()打开文件<br>close()关闭文件<br>read()读取文件<br>write()写文件<br>readlines()按照行读数据<br>readline()只读一行数据<br>seek(offset,from)定位读写,offset偏移量，from=0文件开头，from=1当前位置，from=2文件末尾，seek实际上就是控制文件指针<br>tell()获取文件当前指针位置<br>os.rename()文件重命名<br>os.remove()删除文件<br>os.mkdir()创建文件夹<br>os.getcwd()获取当前操作绝对目录<br>os.chdir()改变默认操作目录<br>os.listdir()获取目录列表<br>os.rmdir()删除文件夹</p>
 ]]></content>
   </entry>
   <entry>
@@ -144,8 +158,8 @@
         <category>Markdown</category>
       </categories>
       <tags>
-        <tag>jupyter notebook</tag>
         <tag>python</tag>
+        <tag>jupyter notebook</tag>
         <tag>Markdown</tag>
       </tags>
   </entry>
